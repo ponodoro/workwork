@@ -1,0 +1,15 @@
+{
+  "name": "workwork",
+  "version": "1.0.0",
+  "description": "Makes Just Dance Now works on Linux screens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ponodoro",
+  "license": "MIT",
+  "devDependencies": {
+    "web-ext": "^6.6.0"
+  }
+}
