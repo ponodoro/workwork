@@ -1,27 +1,29 @@
 {
-    "name": "__MSG_extensionName__",
-    "description": "__MSG_extensionDescription__",
-    "version": "1.1.49",
-    "manifest_version": 2,
-    "default_locale": "en",
-    "permissions": [
-        "tabs",
-        "storage",
-        "<all_urls>",
-        "webNavigation",
-        "webRequest",
-        "webRequestBlocking",
-        "contextMenus"
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.1.49",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "permissions": [
+    "tabs",
+    "storage",
+    "<all_urls>",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [
+        "*://*.justdancenow.com/*",
+        "*://justdancenow.com/*"
       ],
-    "content_scripts": [
-      {
-        "all_frames": true,
-        "matches": [
-          "*://*.justdancenow.com/*",
-          "*://justdancenow.com/*"
-        ],
-        "js": ["main.js"],
-        "run_at": "document_start"
-      }
-    ]
-  }
+      "js": [
+        "main.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
